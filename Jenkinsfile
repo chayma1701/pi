@@ -21,7 +21,9 @@ pipeline {
                     $class: 'GitSCM',
                     branches: [[name: '*/main']], 
                     userRemoteConfigs: [[
-                        url: 'https://github.com/mmouhib/pi', 
+                        url: 'https://github.com/chayma1701/pi.git',
+                        credentialsId: 'github-token'
+
                     ]]
                 ]
                 // Verify checkout
